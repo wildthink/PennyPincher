@@ -1,7 +1,14 @@
-import UIKit
-import UIKit.UIGestureRecognizerSubclass
+#if os(iOS)
+    import UIKit
+    import UIKit.UIGestureRecognizerSubclass 
+    public typealias GestureRecognizer = UIGestureRecognizer
 
-public class PennyPincherGestureRecognizer: UIGestureRecognizer {
+#else
+    import AppKit
+    public typealias GestureRecognizer = NSGestureRecognizer
+#endif
+
+public class PennyPincherGestureRecognizer: GestureRecognizer {
     
     public var enableMultipleStrokes: Bool = true
     public var allowedTimeBetweenMultipleStrokes: NSTimeInterval = 0.2
