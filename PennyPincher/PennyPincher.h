@@ -2,8 +2,8 @@
 //  PennyPincher.h
 //  PennyPincher
 //
-//  Created by Felix on 28.07.15.
-//  Copyright © 2015 betriebsraum. All rights reserved.
+//  Created by Jason Jobe on 9/24/16.
+//  Copyright © 2016 WildThink. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
